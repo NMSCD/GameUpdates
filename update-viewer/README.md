@@ -1,34 +1,38 @@
-## Usage
+<div align="center">
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+# 📀 Game Updates
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+This project aims to show the latest update available for No Man's Sky per platform.
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+  [![Supported by the No Man's Sky Community Developers & Designers](https://raw.githubusercontent.com/NMSCD/About/master/badge/purple-ftb.svg)][nmscd] <br />
+  ![madeWithLove](./.github/badges/built-with-love.svg)
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+  <br /> 
+  
+  ![SolidJS](https://img.shields.io/badge/Solid%20JS-2C4F7C?style=for-the-badge&logo=solid&logoColor=white)
+  ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+  ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+  <br/>![Github Actions](https://img.shields.io/badge/Github%20Actions-2088FF?style=for-the-badge&logo=github%20actions&logoColor=white)
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<br />
 
-### `npm dev` or `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Building the project locally
 
-The page will reload if you make edits.<br>
+The main logic of this solution uses SolidJS and SCSS for styling. To get the solution running, use the following commands:
 
-### `npm run build`
+- `npm i`
+- `npm run dev`
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+<br />
 
 ## Deployment
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+This site makes use of Github Actions to build the project and Github Pages to host it 💪
+
+
+<!-- Links used in the page -->
+
+[nmscd]: https://github.com/NMSCD?ref=nmscdCommunitySearch
