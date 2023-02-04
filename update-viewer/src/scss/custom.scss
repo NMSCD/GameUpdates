@@ -1,0 +1,42 @@
+@import "var";
+@import "wrapper";
+@import "header";
+@import "scrollbar";
+
+html body {
+    font-family: 'Quicksand', sans-serif;
+
+    ::selection {
+        background: #662954;
+        color: white;
+    }
+
+    ::-moz-selection {
+        background: #662954;
+        color: white;
+    }
+
+    a {
+        color: $linkColour;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.max-lines-1 {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}

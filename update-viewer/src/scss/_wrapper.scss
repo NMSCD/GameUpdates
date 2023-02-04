@@ -1,0 +1,11 @@
+.full-size {
+    min-height: 100vh;
+}
+
+.feature-item {
+    width: 100vw;
+}
+
+table.no-border-bottom tr:last-of-type td.hope-td {
+    border-bottom-width: 0 !important;
+}
