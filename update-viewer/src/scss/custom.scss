@@ -40,15 +40,3 @@ html body {
     display: block;
     text-overflow: ellipsis;
 }
-
-.hidden-in-desktop {
-    @media screen and (min-width: 980px) {
-        display: none !important;
-    }
-}
-
-.hidden-in-mobile {
-    @media screen and (max-width: 980px) {
-        display: none !important;
-    }
-}

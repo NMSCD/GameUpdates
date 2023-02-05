@@ -37,7 +37,7 @@ body {
 
         .wrapper {
 
-            .full-size {
+            .update-panel {
                 padding-bottom: 7em;
 
                 >div:first-child {
@@ -63,5 +63,18 @@ body {
                 display: none;
             }
         }
+    }
+}
+
+
+.hidden-in-desktop {
+    @media screen and (min-width: 980px) {
+        display: none !important;
+    }
+}
+
+.hidden-in-mobile {
+    @media screen and (max-width: 980px) {
+        display: none !important;
     }
 }

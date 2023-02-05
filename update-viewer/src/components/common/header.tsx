@@ -6,7 +6,7 @@ import { BasicLink } from '../core/link';
 export const Header: Component = () => {
     return (
         <Box id="header">
-            <Container padding="2em">
+            <Container padding="2em 0 0 0">
                 <HStack justifyContent="space-between">
                     <Heading size="3xl">NMS Updates</Heading>
                     <BasicLink href="https://www.nomanssky.com/waypoint-update/" additionalClassNames="hidden-in-mobile">

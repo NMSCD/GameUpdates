@@ -2,6 +2,10 @@
     min-height: 100vh;
 }
 
+.update-panel {
+    min-height: 80vh;
+}
+
 .feature-item {
     width: 100vw;
     position: relative;
@@ -13,7 +17,7 @@ table.no-border-bottom tr:last-of-type td.hope-td {
 
 .mini-alert {
     position: fixed !important;
-    bottom: 3em;
+    bottom: 2em;
     right: 2em;
 }
 
