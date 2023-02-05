@@ -15,6 +15,7 @@ export const Ps4UpdateEventItem: Component<IProps> = (props: IProps) => {
     return (
         <UpdateBaseEventItem
             networkState={props.networkState}
+            image="ps4.png"
             platform="PS4"
             numberOfSkeletonBars={2}
             children={

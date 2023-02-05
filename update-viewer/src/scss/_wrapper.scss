@@ -4,6 +4,7 @@
 
 .feature-item {
     width: 100vw;
+    position: relative;
 }
 
 table.no-border-bottom tr:last-of-type td.hope-td {
@@ -14,4 +15,12 @@ table.no-border-bottom tr:last-of-type td.hope-td {
     position: absolute;
     bottom: 3em;
     right: 2em;
+}
+
+.card-platform {
+    // position: absolute;
+    // top: 0.5em;
+    // left: 0.5em;
+    margin-top: -2em;
+    margin-bottom: 0.5em;
 }

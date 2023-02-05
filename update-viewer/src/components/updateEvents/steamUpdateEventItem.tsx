@@ -15,6 +15,7 @@ export const SteamUpdateEventItem: Component<IProps> = (props: IProps) => {
     return (
         <UpdateBaseEventItem
             networkState={props.networkState}
+            image="steam.png"
             platform="Steam"
             numberOfSkeletonBars={2}
             children={

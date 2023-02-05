@@ -1,9 +1,10 @@
-import { Box, Center, GridItem, Skeleton, Text, VStack } from '@hope-ui/solid';
+import { Box, Center, GridItem, Image, Skeleton, Text, VStack } from '@hope-ui/solid';
 import { Component, For, JSX, Show } from 'solid-js';
 import { NetworkState } from '../../constants/enum/networkState';
 
 interface IProps {
     networkState: NetworkState;
+    image: string;
     platform: string;
     numberOfSkeletonBars?: number
     children?: JSX.Element;
@@ -22,20 +23,18 @@ export const UpdateBaseEventItem: Component<IProps> = (props: IProps) => {
             textAlign="center"
             class="feature-item"
         >
-            <Center
-                bg="$primary9"
-                boxSize="$12"
-                rounded="$sm"
-                shadow="$md"
+            <Image
+                src={`/assets/img/${props.image}`}
+                alt="platform image"
+                objectFit="cover"
+                width="5em"
                 css={{
                     transform: "translateY(-50%)",
                 }}
-            >
-                <Box color="$neutral1" boxSize="$6" ></Box>
-            </Center>
-            {/* <Text class="noselect" fontSize="$lg" fontWeight="$semibold" mt="-8px" mb="$3">
+            />
+            <Text class="card-platform noselect" color="$primary11" fontSize="$lg" fontWeight="$semibold">
                 {props.platform}
-            </Text> */}
+            </Text>
             <Box width="100%">
                 <Show when={props.networkState == NetworkState.Loading}>
                     <For each={Array(props.numberOfSkeletonBars ?? 1)}>

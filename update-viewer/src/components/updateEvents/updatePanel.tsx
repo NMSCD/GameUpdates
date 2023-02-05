@@ -48,6 +48,7 @@ export const UpdatePanel: Component = () => {
                         />
                         <GenericUpdateEventItem
                             networkState={networkState()}
+                            image="gog.png"
                             platform="GoG"
                             data={updateData()?.gog ?? anyObject}
                         />
@@ -57,12 +58,14 @@ export const UpdatePanel: Component = () => {
                         />
                         <GenericUpdateEventItem
                             networkState={networkState()}
+                            image="ps4.png"
                             platform="PS5"
                             data={updateData()?.ps5 ?? anyObject}
                         />
                         <GenericUpdateEventItem
                             networkState={networkState()}
-                            platform="Switch"
+                            image="switch.png"
+                            platform="Nintendo Switch"
                             data={updateData()?.switch ?? anyObject}
                         />
                     </SimpleGrid>

@@ -7,6 +7,7 @@ import { UpdateBaseEventItem } from './updateBaseEventItem';
 
 interface IProps {
     networkState: NetworkState;
+    image: string;
     platform: string;
     data: GunterUpdateBaseDto;
 }
@@ -16,6 +17,7 @@ export const GenericUpdateEventItem: Component<IProps> = (props: IProps) => {
     return (
         <UpdateBaseEventItem
             networkState={props.networkState}
+            image={props.image}
             platform={props.platform}
             numberOfSkeletonBars={2}
             children={
