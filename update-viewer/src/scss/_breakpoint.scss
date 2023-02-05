@@ -1,0 +1,67 @@
+body {
+
+    @media only screen and (max-width: 1279px) {
+        .hope-heading {
+            margin: 0 1em;
+        }
+
+        .hope-simple-grid {
+            grid-template-columns: repeat(2, minmax(0px, 1fr));
+
+            .feature-item {
+                width: 100%;
+            }
+        }
+
+        .mini-alert {
+            bottom: 0;
+            right: 0;
+
+            >* {
+                padding: 1em;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 980px) {
+        #header .hope-stack {
+            justify-content: center;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #header {
+            position: relative;
+        }
+
+        .wrapper {
+
+            .full-size {
+                padding-bottom: 7em;
+
+                >div:first-child {
+                    display: none;
+                }
+            }
+
+            .hope-heading {
+                text-align: center;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+
+            .hope-simple-grid {
+                grid-template-columns: repeat(1, minmax(0px, 1fr));
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .mini-alert {
+            br {
+                display: none;
+            }
+        }
+    }
+}

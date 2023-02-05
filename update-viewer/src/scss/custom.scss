@@ -1,7 +1,7 @@
 @import "var";
 @import "wrapper";
-@import "header";
 @import "scrollbar";
+@import "breakpoint";
 
 html body {
     font-family: 'Quicksand', sans-serif;
@@ -39,4 +39,16 @@ html body {
     overflow: hidden;
     display: block;
     text-overflow: ellipsis;
+}
+
+.hidden-in-desktop {
+    @media screen and (min-width: 980px) {
+        display: none !important;
+    }
+}
+
+.hidden-in-mobile {
+    @media screen and (max-width: 980px) {
+        display: none !important;
+    }
 }

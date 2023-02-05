@@ -7,7 +7,7 @@ export const HomePage: Component = () => {
     return (
         <div class="wrapper">
             <VStack class="full-size" justifyContent="center">
-                <Box margin="2em"></Box>
+                <Box margin="1em"></Box>
                 <Heading size="5xl" marginBottom="$8">Latest update information</Heading>
                 <UpdatePanel />
             </VStack>
