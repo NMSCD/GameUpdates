@@ -26,6 +26,7 @@ jobs:
 
       - name: Build JS
         run: |
+          cd update-viewer
           npm ci
           npm run build
           
