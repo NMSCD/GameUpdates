@@ -5,7 +5,7 @@ import { BasicLink } from '../core/link';
 
 export const Header: Component = () => {
     return (
-        <Box id="header">
+        <Box id="header" class="noselect">
             <Container padding="2em 0 0 0">
                 <HStack justifyContent="space-between">
                     <Heading size="3xl">NMS Updates</Heading>

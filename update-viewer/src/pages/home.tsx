@@ -8,10 +8,12 @@ export const HomePage: Component = () => {
         <div class="wrapper">
             <VStack class="update-panel" justifyContent="center">
                 <Box margin="1em"></Box>
-                <Heading size="5xl" marginBottom="$8">Latest update information</Heading>
+                <Heading size="5xl" marginBottom="$8" class="noselect">
+                    Latest update information
+                </Heading>
                 <UpdatePanel />
             </VStack>
-            <Anchor href="https://discord.gg/nomanssky" class="mini-alert">
+            <Anchor href="https://discord.gg/nomanssky" class="mini-alert noselect">
                 <Alert status="success">
                     <Avatar name="Gunter" src="/assets/img/gunter.webp" marginRight="1em" />
                     Special thank you to Gunter for providing the update information! 💖 <br />Check them out in the No Man's Sky Discord!

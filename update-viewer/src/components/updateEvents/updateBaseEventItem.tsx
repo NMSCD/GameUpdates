@@ -27,6 +27,7 @@ export const UpdateBaseEventItem: Component<IProps> = (props: IProps) => {
                 src={`/assets/img/${props.image}`}
                 alt="platform image"
                 objectFit="cover"
+                class="noselect"
                 width="5em"
                 css={{
                     transform: "translateY(-50%)",

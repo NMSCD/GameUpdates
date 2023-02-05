@@ -27,7 +27,7 @@ export const GenericUpdateEventItem: Component<IProps> = (props: IProps) => {
 
                     <Text class="noselect" marginTop="1em">Date</Text>
                     <Tooltip label={formatDate(props.data.dateUpdated, 'dddd D MMMM YYYY HH:mm')}>
-                        <Text class="noselect" color="$neutral11">
+                        <Text color="$neutral11">
                             {formatDate(props.data.dateUpdated, 'D MMM YYYY')}
                         </Text>
                     </Tooltip>

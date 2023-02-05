@@ -34,7 +34,7 @@ export const SteamUpdateEventItem: Component<IProps> = (props: IProps) => {
                                     <Td>{steamDepot.buildId}</Td>
                                     <Td textAlign="center">{steamDepot.name}</Td>
                                     <Tooltip label={formatDate(steamDepot.dateUpdated, 'dddd D MMMM YYYY HH:mm')}>
-                                        <Td textAlign="right" class="noselect">
+                                        <Td textAlign="right">
                                             {formatDate(steamDepot.dateUpdated, 'D MMM YYYY')}
                                         </Td>
                                     </Tooltip>

@@ -34,7 +34,7 @@ export const Ps4UpdateEventItem: Component<IProps> = (props: IProps) => {
                                     <Td>{data.version}</Td>
                                     <Td textAlign="center">{data.region?.toUpperCase()}</Td>
                                     <Tooltip label={formatDate(data.dateUpdated, 'dddd D MMMM YYYY HH:mm')}>
-                                        <Td textAlign="right" class="noselect">
+                                        <Td textAlign="right">
                                             {formatDate(data.dateUpdated, 'D MMM YYYY')}
                                         </Td>
                                     </Tooltip>
