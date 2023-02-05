@@ -34,4 +34,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
-          folder: dist # The folder the action should deploy.
+          folder: update-viewer/dist # The folder the action should deploy.
