@@ -10,7 +10,7 @@ export const Header: Component = () => {
                 <HStack justifyContent="space-between">
                     <Heading size="3xl">NMS Updates</Heading>
                     <BasicLink href="https://www.nomanssky.com/waypoint-update/">
-                        <Box border="2px solid #ff8400" padding="0.5em 1em">
+                        <Box border="2px solid" borderRadius="0.5em" padding="0.5em 1em">
                             <Text color="white">Latest Patch Notes</Text>
                         </Box>
                     </BasicLink>
