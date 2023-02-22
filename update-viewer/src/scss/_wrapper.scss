@@ -9,6 +9,22 @@
 .feature-item {
     width: 100vw;
     position: relative;
+    perspective: 2500px;
+    transition: all 250ms ease-in-out;
+
+    img {
+        perspective: 2500px;
+        transition: all 250ms ease-in-out;
+    }
+
+    &:hover {
+        transform: perspective(2500px) translateY(-5%) rotateX(10deg) translateZ(0);
+        box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+
+        img {
+            transform: translateY(-50%) translateZ(10em);
+        }
+    }
 }
 
 table.no-border-bottom tr:last-of-type td.hope-td {

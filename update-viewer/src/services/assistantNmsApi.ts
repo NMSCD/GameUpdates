@@ -6,7 +6,11 @@ import { getGunterResp } from './mock/gunter.response';
 export class AssistantNmsApi extends BaseApiService {
 
     async getUpdateData(): Promise<ResultWithValue<GunterUpdateDto>> {
-        // return await this.get<GunterUpdateDto>('Gunter');
+        const result = await this.get<GunterUpdateDto>('Gunter');
+        if (result.isSuccess) {
+            return result;
+        }
+
         return {
             isSuccess: true,
             errorMessage: '',
