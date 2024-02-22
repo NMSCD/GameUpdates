@@ -12,16 +12,13 @@ jobs:
     environment: github-pages
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [19.x]
-
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: lts/*
           cache: 'npm'
           cache-dependency-path: update-viewer/package-lock.json
 
@@ -30,8 +27,10 @@ jobs:
           cd update-viewer
           npm ci
           npm run build
+          cd dist
+          touch .nojekyll
           
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.3.4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: update-viewer/dist # The folder the action should deploy.
